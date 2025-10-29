@@ -1,4 +1,5 @@
 import { products } from "../constants/product";
+import { UpdateCartToal } from "../factor/factor";
 
 export function RenderItems() {
   let container = document.createElement("div");
@@ -64,7 +65,7 @@ export function RenderItems() {
         item.quantity++;
         productCount.innerText = item.quantity;
         updatePrice.innerText = item.price * item.quantity + " تومان";
-        // UpdateCartTotal()
+        UpdateCartToal()
       }
     });
     // remove items
@@ -73,7 +74,7 @@ export function RenderItems() {
         item.quantity--;
         productCount.innerText = item.quantity;
         updatePrice.innerText = item.price * item.quantity + " تومان";
-        // UpdateCartTotal()
+       UpdateCartToal()
       }
     });
 
