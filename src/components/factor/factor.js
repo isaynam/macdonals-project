@@ -114,3 +114,19 @@ export function UpdateCartToal() {
         finalPriceFactor.innerText = finalAmount + " تومان";
       });
 }
+
+export function SubmitOrder(){
+  let submitOrder = document.getElementById("submitOrder");
+  let cartTotal = document.getElementById("cartTotal");
+  
+  submitOrder.addEventListener("click" , function(){
+    if(cartTotal.innerText !== "0 تومان"){
+      console.log("سفارش ثبت شد")
+    }
+    else{
+     console.log("ثبت کنید");
+     
+    }
+
+  })
+}

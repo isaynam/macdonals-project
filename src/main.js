@@ -1,4 +1,4 @@
-import { Factor , UpdateCartToal } from './components/factor/factor'
+import { Factor , SubmitOrder, UpdateCartToal } from './components/factor/factor'
 import { RenderItems } from './components/menu/menu'
 import './style.css'
 
@@ -13,3 +13,4 @@ app.classList.add(
 );
 app.append(RenderItems() , Factor())
 UpdateCartToal()
+SubmitOrder()
