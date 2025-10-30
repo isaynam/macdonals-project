@@ -121,12 +121,12 @@ export function SubmitOrder(){
   
   submitOrder.addEventListener("click" , function(){
     if(cartTotal.innerText !== "0 تومان"){
-      console.log("سفارش ثبت شد")
+     submitOrder.textContent = " سفارش شما با موفقیت ثبت شد";
+     submitOrder.style.backgroundColor = "#013f01";
     }
     else{
-     console.log("ثبت کنید");
-     
+       submitOrder.textContent = "لطفا سفارش خود را ثبت کنید";
+       submitOrder.style.backgroundColor = "#8d0202";
     }
-
   })
 }
