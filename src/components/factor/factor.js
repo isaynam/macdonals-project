@@ -118,11 +118,14 @@ export function UpdateCartToal() {
 export function SubmitOrder(){
   let submitOrder = document.getElementById("submitOrder");
   let cartTotal = document.getElementById("cartTotal");
-  
   submitOrder.addEventListener("click" , function(){
     if(cartTotal.innerText !== "0 تومان"){
      submitOrder.textContent = " سفارش شما با موفقیت ثبت شد";
      submitOrder.style.backgroundColor = "#013f01";
+    // reload page
+    setInterval(() => {
+      location.reload();
+    }, 3000);
     }
     else{
        submitOrder.textContent = "لطفا سفارش خود را ثبت کنید";
@@ -130,3 +133,5 @@ export function SubmitOrder(){
     }
   })
 }
+
+
