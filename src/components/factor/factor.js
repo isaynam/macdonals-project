@@ -113,6 +113,7 @@ export function UpdateCartToal() {
         let finalAmount = sum + finalFeePrice - discountedPrice;
         finalPriceFactor.innerText = finalAmount + " تومان";
       });
+      
 }
 
 export function SubmitOrder(){
